@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http:/schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>OctopusContrib.NewRelic</id>
         <version>1.0.3.0</version>
@@ -8,7 +8,7 @@
         <owners />
         <projectUrl>https://github.com/octopuscontrib/OctopusContrib.NewRelic</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Octopus Deployment package for New Relic</description>
+        <description>Generate a Octopus Deployment package for New Relic</description>
         <language>en-US</language>
     </metadata>
 </package>
