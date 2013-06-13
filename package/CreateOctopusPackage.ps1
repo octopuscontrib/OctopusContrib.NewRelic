@@ -24,6 +24,11 @@ $NugetExe = Resolve-Path ".\nuget.exe"
 New-Item .\output -type directory -Force
 $OutputPath = Resolve-Path '.\output'
 Remove-Item "$OutputPath\*.*" -force
+
+if(Test-Path ".\Generic.NewRelic.template") {
+	Move-Item ".\Generic.NewRelic.template" "Generic.NewRelic.nuspec" #NuGet.exe exludes *.nuspec files *sigh
+}
+
 $NuSpecFile = Resolve-Path ".\Generic.NewRelic.nuspec"
 if(Select-String -Simple "<id>Specify</id>" $NuSpecFile)
 {
