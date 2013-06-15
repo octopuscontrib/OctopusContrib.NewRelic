@@ -18,6 +18,10 @@ The installation script (deploy.ps1) supports a number of variables:
 - NewRelicApplicationName: Optional. By convention the installation script will concat the Octopus project name and the Environment. E.g. 'MyApp Staging". If NewRelicApplicationName is set, this will be used instead. Note that this name will be configured in the newrelic.xml configuration file. If you host more than 1 application on the IIS, then add the AppSetting NewRelic.AppName with your application name. For more information se the New Relic documentation https://newrelic.com/docs/dotnet/AgentDocumentation.
 - NewRelicIisReset: Optional. If set to 'true' the package will perform an IIS reset after installing New Relic. Note this is required, to let New Relic hook into the IIS. If not specified, an IIS reset will not be performed.
 
-**Step 4:** Create Octopus Release Candidate
+**Step 4:** Replace installers
+
+Optionally replace the New Relic Server Monitor and Agent installer with the newest version.
+
+**Step 5:** Create Octopus Release Candidate
 
 Invoke CreateOctopusPackage.ps1 (or just use NuGet.exe) to create the Octopus Release Candidate. This script will optionally let you upload to your Octopus Release Candidate NuGet repository
