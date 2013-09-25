@@ -20,7 +20,7 @@ The installation script (deploy.ps1) supports a number of variables:
 
 **Step 4:** Replace installers
 
-Optionally replace the New Relic Server Monitor and Agent installer with the newest version.
+Optionally replace the New Relic Server Monitor and Agent installer with the newest version. (Note New Relic changed their installation process and configuration file format. I'm working on a updated package)
 
 **Step 5:** Create Octopus Release Candidate
 
