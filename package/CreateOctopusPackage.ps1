@@ -26,7 +26,7 @@ $OutputPath = Resolve-Path '.\output'
 Remove-Item "$OutputPath\*.*" -force
 
 if(Test-Path ".\Generic.NewRelic.template") {
-	Move-Item ".\Generic.NewRelic.template" "Generic.NewRelic.nuspec" #NuGet.exe exludes *.nuspec files *sigh
+	Copy-Item ".\Generic.NewRelic.template" "Generic.NewRelic.nuspec" #NuGet.exe exludes *.nuspec files *sigh
 }
 
 $NuSpecFile = Resolve-Path ".\Generic.NewRelic.nuspec"
