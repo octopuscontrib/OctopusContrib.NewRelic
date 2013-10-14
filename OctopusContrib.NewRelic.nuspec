@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>OctopusContrib.NewRelic</id>
-        <version>1.0.3.0</version>
+        <version>1.0.4.0</version>
         <title />
         <authors>Jasper Nygaard</authors>
         <owners />
@@ -10,5 +10,8 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Generate a Octopus Deployment package for New Relic</description>
         <language>en-US</language>
+        <releaseNotes>
+            1.0.4: Added support for new configuration file newrelic.config. Added New Relic Agent v.2.14.53.0 installer.
+        </releaseNotes>
     </metadata>
 </package>
