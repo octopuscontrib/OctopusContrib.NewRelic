@@ -25,6 +25,14 @@ InstallNewRelicServerMonitor $NewRelicAgentApiKey
 Write-Host "Installing New Relic .NET Agent"
 InstallNewRelicAgent $NewRelicAgentApiKey $NewRelicApplicationName
 
+if(!($NewRelicAutoRepair -eq "false")) {
+    $repairScript = resolve-path ".\CreateScheduledTaskNewRelicRepair.ps1"
+	& $repairScript | Write-Host
+}
+else {
+	Write-Warning "NewRelicAutoRepair variable set to false. Auto repair will not be enabled."
+}
+
 #Reset IIS 
 if($NewRelicIisReset -eq "true") {
 	& "iisreset" | Write-Host

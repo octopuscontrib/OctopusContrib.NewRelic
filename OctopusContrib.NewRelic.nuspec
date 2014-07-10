@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>OctopusContrib.NewRelic</id>
-        <version>1.0.4.0</version>
+        <version>1.1.0.0</version>
         <title />
         <authors>Jasper Nygaard</authors>
         <owners />
@@ -12,6 +12,7 @@
         <language>en-US</language>
         <releaseNotes>
             1.0.4: Added support for new configuration file newrelic.config. Added New Relic Agent v.2.14.53.0 installer.
+            1.1.0: Added auto repair option upon startup, to fix conflicts with software such as Microsoft SCOM. Added .Net Agent 3.2.113.0
         </releaseNotes>
     </metadata>
 </package>

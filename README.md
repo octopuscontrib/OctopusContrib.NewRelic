@@ -17,6 +17,7 @@ The installation script (deploy.ps1) supports a number of variables:
 - NewRelicAgentApiKey: Mandatory. The New Relic API key
 - NewRelicApplicationName: Optional. By convention the installation script will concat the Octopus project name and the Environment. E.g. 'MyApp Staging". If NewRelicApplicationName is set, this will be used instead. Note that this name will be configured in the newrelic.xml configuration file. If you host more than 1 application on the IIS, then add the AppSetting NewRelic.AppName with your application name. For more information se the New Relic documentation https://newrelic.com/docs/dotnet/AgentDocumentation.
 - NewRelicIisReset: Optional. If set to 'true' the package will perform an IIS reset after installing New Relic. Note this is required, to let New Relic hook into the IIS. If not specified, an IIS reset will not be performed.
+- NewRelicAutoRepair: Optional. The New Relic .NET agent enables certain values in the registration database, to be able to profile the IIS process. Certain programs, such as the Microsoft SCOM APM agent, resets these values upon restart and hence ruining the New Relic configuration. By enabling this, a scheduled task will be created, triggered upon startup, repairing the New Relic installation. By default this is set to 'true'. If set to 'false' an scheduled task will not be created.
 
 **Step 4:** Replace installers
 
