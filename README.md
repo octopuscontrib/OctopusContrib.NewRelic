@@ -26,3 +26,6 @@ Optionally replace the New Relic Server Monitor and Agent installer with the new
 **Step 5:** Create Octopus Release Candidate
 
 Invoke CreateOctopusPackage.ps1 (or just use NuGet.exe) to create the Octopus Release Candidate. This script will optionally let you upload to your Octopus Release Candidate NuGet repository
+
+## Nuget.org
+You can use the OctopusContrib.NewRelic package from Nuget.org - > https://www.nuget.org/packages/OctopusContrib.NewRelic/
