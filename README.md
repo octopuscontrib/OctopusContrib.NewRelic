@@ -29,3 +29,5 @@ Invoke CreateOctopusPackage.ps1 (or just use NuGet.exe) to create the Octopus Re
 
 ## Nuget.org
 You can use the OctopusContrib.NewRelic package from Nuget.org - > https://www.nuget.org/packages/OctopusContrib.NewRelic/
+
+[![Build status](https://ci.appveyor.com/api/projects/status/4fkqnrtivphjinib?svg=true)](https://ci.appveyor.com/project/sovs/octopuscontrib-newrelic)
